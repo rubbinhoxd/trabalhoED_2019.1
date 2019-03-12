@@ -1,3 +1,6 @@
+![](eu_Easy-Resize.com.jpg)
+
+
 >>>>>>>>>>>>>>>>>>>>>>> 01 - Cabeças Vão Rolar V2 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 -----> 	Eu fiz o segundo código do Cabeças Vão Rolar, que o senhor pediu para nós fazermos.
