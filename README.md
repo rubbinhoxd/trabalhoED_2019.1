@@ -4,7 +4,9 @@
 
 **Curso:** Engenharia de Computação / 2018.1  
 
-**Turma:** Estrutura de Dados / 2019.1  
+**Turma:** Estrutura de Dados / 2019.1 
+
+**Matrícula:** 421779
 
 **Professor:** David Sena  
 
