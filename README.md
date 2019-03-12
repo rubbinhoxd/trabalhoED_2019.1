@@ -1,7 +1,7 @@
 ![](eu_Easy-Resize.com.jpg)
 
 **Nome:** Francisco Rubens Félix Martins Filho
-**Matrícula** 421779
+**Matrícula:** 421779
 **Curso:** Engenharia de Computação / 2018.1  
 **Turma:** Estrutura de Dados / 2019.1  
 **Professor:** David Sena  
