@@ -26,5 +26,4 @@ para relembrar umas coisas. Mas no final deu certo.
 
 
 
-# trabalhoED_2019.1
-Disciplina de Estrutura de Dados - Professor David Sena (UFC - Quixadá)
+
