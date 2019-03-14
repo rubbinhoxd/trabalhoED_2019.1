@@ -4,24 +4,24 @@ const char TREE = '#';
 const char FIRE = 'o';
 const char EMPTY = '.'; 
 
-void show(int nl, int nc, char mat[nl][nc]){
+void mostrar_matriz(int nl, int nc, char mat[nl][nc]){
     for(int l = 0; l < nl; l++){
         for(int c = 0; c < nc; c++)
             printf("%c", mat[l][c]);
-        puts("");
+        printf("");
     }
 }
 
-void tocar_fogo(int nl, int nc, char mat[nl][nc], int l, int c){
+void pay_fire(int nl, int nc, char mat[nl][nc], int l, int c){
     if((l < 0) || (l >= nl) || (c < 0) || (c >= nc))
         return;
     if(mat[l][c] != TREE)
         return;
     mat[l][c] = FIRE;
-    tocar_fogo(nl, nc, mat, l, c + 1);
-    tocar_fogo(nl, nc, mat, l, c - 1);
-    tocar_fogo(nl, nc, mat, l - 1, c);
-    tocar_fogo(nl, nc, mat, l + 1, c);
+    pay_fire(nl, nc, mat, l, c + 1);
+    pay_fire(nl, nc, mat, l, c - 1);
+    pay_fire(nl, nc, mat, l - 1, c);
+    pay_fire(nl, nc, mat, l + 1, c);
 }
 
 int main(){
@@ -34,7 +34,7 @@ int main(){
     for(int l = 0; l < nl; l++)
         for(int c = 0; c < nc; c++)
             scanf(" %c", &mat[l][c]);
-    tocar_fogo(nl, nc, mat, l, c);
-    show(nl, nc, mat);
+    pay_fire(nl, nc, mat, l, c);
+    mostrar_matriz(nl, nc, mat);
 
 }
