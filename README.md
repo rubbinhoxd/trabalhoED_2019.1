@@ -24,6 +24,17 @@ condições em algumas funções para percorrer o vetor modularmente (como a fun
 para relembrar umas coisas. Mas no final deu certo.
 ©
 
+# Queimada
+-----> Eu dei uma pequena modificada no código da Queimada, conforme o senhor pediu.
+
+-----> Fiz pequenas modificações sozinho
+
+-----> Conseguir dar uma treinada em recursividade
+
+-----> A mexer na recursividade em si, em algumas situações acabo me perdendo, e não sei ao certo
+"quando usar" a recursividade.
+
+-----> Levei pouco tempo para fazer, cerca de dois dias, ainda fui na monitoria tirar algumas dúvidas a respeito do código.
 
 
 
