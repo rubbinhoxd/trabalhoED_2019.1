@@ -10,7 +10,7 @@
 
 **Professor:** David Sena 
 
-# Jogo da Decapitação
+# 01 - Jogo da Decapitação
 -----> 	Eu fiz o segundo código do Cabeças Vão Rolar, que o senhor pediu para nós fazermos.
 
 ----->	Eu fiz o código inteiro sozinho
@@ -24,7 +24,7 @@ condições em algumas funções para percorrer o vetor modularmente (como a fun
 para relembrar umas coisas. Mas no final deu certo.
 ©
 
-# Queimada
+# 02- Queimada
 -----> Eu dei uma pequena modificada no código da Queimada, conforme o senhor pediu.
 
 -----> Fiz pequenas modificações sozinho
