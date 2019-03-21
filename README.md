@@ -36,5 +36,10 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Levei pouco tempo para fazer, cerca de dois dias, ainda fui na monitoria tirar algumas dúvidas a respeito do código.
 
-
+# 03 - Labirinto
+-----> Eu fiz o codigo do labirinto aleatório
+-----> Fiz o código só, mas tirei dúvidas no almoço com código. Também fiz aquela alteração que o senhor pediu para dizer qual o elemento da matriz que começava, e a partir daí percorrer o labirinto aleatoriamente até parar em algum local que não fosse mais possível ser percorrido.
+-----> Treinei a recursividade, e dei uma melhorada em chamar funções dentro de outras.
+-----> Justamente na recursividade, e eu não sabia exatamente por onde começar a fazer aquela alteraço que o senhor pediu de percorrer o labirinto aleatoriamente com os pontinhos, mas o pseudocódigo que o senhor disponibilizou me ajudou bastante.
+-----> Confesso que quase eu não faço, terminei o código no último dia para entrega (20/03), por sorte, eu consegui fazer o código e entregar a tempo.Porque esse labirinto me bugava um pouco, e nem com as ajudas dos monitores eu conseguia enxergar o problema, mas no final deu certo.
 
