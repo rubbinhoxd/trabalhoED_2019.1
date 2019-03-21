@@ -43,7 +43,7 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Treinei a recursividade, e dei uma melhorada em chamar funções dentro de outras.
 
------> Justamente na recursividade, e eu não sabia exatamente por onde começar a fazer aquela alteraço que o senhor pediu de percorrer o labirinto aleatoriamente com os pontinhos, mas o pseudocódigo que o senhor disponibilizou me ajudou bastante.
+-----> Justamente na recursividade, e eu não sabia exatamente por onde começar a fazer aquela alteração que o senhor pediu de percorrer o labirinto aleatoriamente com os pontinhos, mas o pseudocódigo que o senhor disponibilizou me ajudou bastante.
 
 -----> Confesso que quase eu não faço, terminei o código no último dia para entrega (20/03), por sorte, eu consegui fazer o código e entregar a tempo.Porque esse labirinto me bugava um pouco, e nem com as ajudas dos monitores eu conseguia enxergar o problema, mas no final deu certo.
 
