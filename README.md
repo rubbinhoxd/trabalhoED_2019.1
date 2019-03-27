@@ -55,6 +55,6 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Treinei a recursividade, e me divertir bastante criando diferentes figuras.
 
------> No caso do Círculo, eu no sabia criar exatamente quantas funçes eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também.
+-----> No caso do Círculo, eu não sabia criar exatamente quantas funçes eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também.
 
 -----> Pra fazer os dois primeiros códigos, foi bem tranquilo. Mas o do círculo eu demorei cerca de dois dias, finalizando tudo hoje.
