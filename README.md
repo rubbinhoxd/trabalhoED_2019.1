@@ -47,3 +47,14 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Confesso que quase eu não faço, terminei o código no último dia para entrega (20/03), por sorte, eu consegui fazer o código e entregar a tempo.Porque esse labirinto me bugava um pouco, e nem com as ajudas dos monitores eu conseguia enxergar o problema, mas no final deu certo.
 
+# 04 - Fractais
+
+-----> Eu fiz 3 tipos de fractais: O trigo, os Quadrados entre quadrados, e árvore remasterizada.
+
+-----> Fiz a árvore e o trigo sozinho, mas os quadrados eu precisei de ajuda para fazer, fui ao Almoço com Código, e lá, os monitores me auxiliaram a fazer.
+
+-----> Treinei a recursividade, e me divertir bastante criando diferentes figuras.
+
+-----> No caso do Círculo, eu no sabia criar exatamente quantas funçes eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também.
+
+-----> Pra fazer os dois primeiros códigos, foi bem tranquilo. Mas o do círculo eu demorei cerca de dois dias, finalizando tudo hoje.
