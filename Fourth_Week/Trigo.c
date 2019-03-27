@@ -19,10 +19,11 @@ void trigo(int x, int y, float ang, int size){
     int y1 = y;
 
     for(int i = 0; i < 4; i++){
-    
-            int xfinal = x1 + size * xm_cos(ang);
+   
 
             int yfinal = y1 - size * xm_sin(ang);
+	    
+	    int xfinal = x1 + size * xm_cos(ang);
         
             xd_thick_line(x, y, xfinal, yfinal, 5);
         
