@@ -49,12 +49,12 @@ para relembrar umas coisas. Mas no final deu certo.
 
 # 04 - Fractais
 
------> Eu fiz 3 tipos de fractais: O trigo, os Quadrados entre quadrados, e árvore remasterizada.
+-----> Eu fiz 4 tipos de fractais: O trigo, os Quadrados entre quadrados, os círculos entre os círculos e a árvore remasterizada.
 
------> Fiz a árvore e o trigo sozinho, mas os quadrados eu precisei de ajuda para fazer, fui ao Almoço com Código, e lá, os monitores me auxiliaram a fazer.
+-----> Fiz a árvore e o trigo sozinho, mas os quadrados e os círculos eu precisei de ajuda para fazer, fui ao Almoço com Código, e lá, os monitores me auxiliaram a fazer.
 
 -----> Treinei a recursividade, e me divertir bastante criando diferentes figuras.
 
------> No caso do Círculo, eu não sabia criar exatamente quantas funçes eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também.
+-----> No caso do Quadrado, eu não sabia criar exatamente quantas funçes eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também. E no caso do Círculo, eu tive dificuldade em entender que o angulo aumentava de 60 em 60, mas depois que eu entendi o conceito da recursão, pra fazer ficou bem mais prático. Porque se assemelhava muito ao Trigo, no que diz respeito ao Código.
 
------> Pra fazer os dois primeiros códigos, foi bem tranquilo. Mas o do círculo eu demorei cerca de dois dias, finalizando tudo hoje.
+-----> Pra fazer o Trigo e a Árvore, foi bem tranquilo. Mas o do círculo e do quadrado eu demorei cerca de dois dias, finalizando tudo hoje no almoço com código.
