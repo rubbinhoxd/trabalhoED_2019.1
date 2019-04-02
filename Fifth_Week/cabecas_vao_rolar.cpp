@@ -93,19 +93,19 @@ int main(){
     int esc = 0;
     
     int modulo = 0;
+    
+    int aux2 = 0
 
     cin >> num >> esc >> modulo;
 
     for(int i = 1; i <= num; i++){
-        lista.push_back(i*modulo);
+        lista.push_back(i*modulo);    //ler a lista
         modulo*=-1;
     }
 
     mostrar(lista,esc);
 
     Node * aux = lista.head->next;
-    
-    int aux2 = 0;
     
     while(lista.head->next->next != lista.tail){
         if(aux->value == esc || aux->value == esc*-1) {
@@ -123,7 +123,7 @@ int main(){
                     aux2 = esc;
 
                 for (int i = 0; i < aux2; i++) {
-                    aux = aux->prev;
+                    aux = aux->prev;                    //procurando o proximo esc
                     if (aux == lista.head)
                         aux = lista.tail->prev;
                 }
@@ -147,7 +147,7 @@ int main(){
 
                 for (int i = 0; i < aux2; i++) {
                     aux = aux->next;
-                    if (aux == lista.tail)
+                    if (aux == lista.tail)                  //procurando o proximo escolhido
                         aux = lista.head->next;
                 }
                 
