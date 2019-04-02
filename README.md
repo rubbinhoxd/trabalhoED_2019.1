@@ -58,3 +58,17 @@ para relembrar umas coisas. Mas no final deu certo.
 -----> No caso do Quadrado, eu não sabia criar exatamente quantas funções eu precisava chamar uma da outra(não sabia quantas recursões fazer ao todo, bem dizer) e na função de preencher o quadrado desenhando-o (usando o xd_thick_line), eu não sabia ao certo quantas vezes ter que chamar essa função também. E no caso do Círculo, eu tive dificuldade em entender que o angulo aumentava de 60 em 60, mas depois que eu entendi o conceito da recursão, pra fazer ficou bem mais prático. Porque se assemelhava muito ao Trigo, no que diz respeito ao Código.
 
 -----> Pra fazer o Trigo e a Árvore, foi bem tranquilo. Mas o do círculo e do quadrado eu demorei cerca de dois dias, finalizando tudo hoje no almoço com código.
+
+# 05 - Cabeças vão rolar - Lista Dupla
+
+-----> Eu fiz o cabeças vão rolar parte 2 com a lista encadeada dupla.
+
+-----> Fiz a implementação sozinho, mas fui atrás de ajuda, com alguns colegas, e pessoas que já tinham feito algo parecido.
+
+-----> Eu aprendi a implementar a lista dupla, não tão bem, admito, mas aprendi a implementá-la.
+
+-----> Acredito que o básico, a mexer com ponteiros, por exemplo. E como a lista é uma estrutura que basicamente usa isso, eu ainda tenho muita dificuldade.
+
+-----> Levei cerca de 2 dias pra fazer. Comecei no Domingo, e vim terminar quase agora, no final da segunda-feira.
+
+
