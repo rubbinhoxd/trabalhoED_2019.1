@@ -69,6 +69,6 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Acredito que o básico, a mexer com ponteiros, por exemplo. E como a lista é uma estrutura que basicamente usa isso, eu ainda tenho muita dificuldade.
 
------> Levei cerca de 2 dias pra fazer. Comecei no Domingo, e vim terminar quase agora, no final da segunda-feira.
+-----> Levei cerca de 2 dias pra fazer. Comecei no Domingo, e vim terminar quase agora, no final da segunda-feira, com ajuda.
 
 
