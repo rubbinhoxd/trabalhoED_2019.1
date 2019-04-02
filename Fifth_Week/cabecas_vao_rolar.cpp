@@ -109,30 +109,7 @@ int main(){
     
     while(lista.head->next->next != lista.tail){
         if(aux->value == esc || aux->value == esc*-1) {
-            if (aux->value > 0) {
-                if (aux->next == lista.tail) {
-                    aux = lista.head;
-                    lista.remover(aux->next);
-                }
-                else
-                    lista.remover(aux->next);
-
-                if(esc < 0)
-                    aux2= esc*-1;
-                else
-                    aux2 = esc;
-
-                for (int i = 0; i < aux2; i++) {
-                    aux = aux->next;
-                    if (aux == lista.tail)
-                        aux = lista.head->next;
-                }
-                
-                esc = aux->value;
-                
-                mostrar(lista, esc);
-            }
-            else{
+            if (aux->value < 0) {
                 if (aux->prev == lista.head) {
                     aux = lista.tail;
                     lista.remover(aux->prev);
@@ -149,6 +126,29 @@ int main(){
                     aux = aux->prev;
                     if (aux == lista.head)
                         aux = lista.tail->prev;
+                }
+                
+                esc = aux->value;
+                
+                mostrar(lista, esc);
+            }
+            else{
+                if (aux->next == lista.tail) {
+                    aux = lista.head;
+                    lista.remover(aux->next);
+                }
+                else
+                    lista.remover(aux->next);
+
+                if(esc < 0)
+                    aux2= esc*-1;
+                else
+                    aux2 = esc;
+
+                for (int i = 0; i < aux2; i++) {
+                    aux = aux->next;
+                    if (aux == lista.tail)
+                        aux = lista.head->next;
                 }
                 
                 esc = aux->value;
