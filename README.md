@@ -63,7 +63,7 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Eu fiz o cabeças vão rolar parte 2 com a lista encadeada dupla.
 
------> Fiz a implementação sozinho, mas fui atrás de ajuda, com alguns colegas, e pessoas que já tinham feito algo parecido. Basicamente, eu peguei o seu código da aula passada, e implementei algumas funções, mudando também a minha main. Pegando um pouco da minha lógica do primeiro código do Cabeças vao rolar 2, mas implementando na main apenas, usando lista.
+-----> Fiz a implementação sozinho, mas fui atrás de ajuda, com alguns colegas, e pessoas que já tinham feito algo parecido. Basicamente, eu peguei o código da aula passada que o senhor fez, e implementei uma função, mudando também a minha main. Pegando um pouco da minha lógica do primeiro código do Cabeças vao rolar 2, mas implementando na main apenas, usando a lógica da lista, com os nós indo pra frente e pra trás sem perder as duas referências que eram a cabeça e o rabo.
 
 -----> Eu aprendi a implementar a lista dupla, não tão bem, admito, mas aprendi a implementá-la.
 
