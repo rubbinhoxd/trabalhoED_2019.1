@@ -94,7 +94,7 @@ int main(){
     
     int modulo = 0;
     
-    int aux2 = 0
+    int aux2 = 0;
 
     cin >> num >> esc >> modulo;
 
@@ -105,17 +105,17 @@ int main(){
 
     mostrar(lista,esc);
 
-    Node * aux = lista.head->next;
+    Node * aux1 = lista.head->next;
     
     while(lista.head->next->next != lista.tail){
-        if(aux->value == esc || aux->value == esc*-1) {
-            if (aux->value < 0) {
-                if (aux->prev == lista.head) {
-                    aux = lista.tail;
-                    lista.remover(aux->prev);
+        if(aux1->value == esc || aux1->value == esc*-1) {
+            if (aux1->value < 0) {
+                if (aux1->prev == lista.head) {
+                    aux1 = lista.tail;
+                    lista.remover(aux1->prev);
                 }
                 else
-                    lista.remover(aux->prev);
+                    lista.remover(aux1->prev);
 
                 if(esc < 0)
                     aux2= esc*-1;
@@ -123,22 +123,22 @@ int main(){
                     aux2 = esc;
 
                 for (int i = 0; i < aux2; i++) {
-                    aux = aux->prev;                    //procurando o proximo esc
-                    if (aux == lista.head)
-                        aux = lista.tail->prev;
+                    aux1 = aux1->prev;                    //procurando o proximo esc
+                    if (aux1 == lista.head)
+                        aux1 = lista.tail->prev;
                 }
                 
-                esc = aux->value;
+                esc = aux1->value;
                 
                 mostrar(lista, esc);
             }
             else{
-                if (aux->next == lista.tail) {
-                    aux = lista.head;
-                    lista.remover(aux->next);
+                if (aux1->next == lista.tail) {
+                    aux1 = lista.head;
+                    lista.remover(aux1->next);
                 }
                 else
-                    lista.remover(aux->next);
+                    lista.remover(aux1->next);
 
                 if(esc < 0)
                     aux2= esc*-1;
@@ -146,18 +146,18 @@ int main(){
                     aux2 = esc;
 
                 for (int i = 0; i < aux2; i++) {
-                    aux = aux->next;
-                    if (aux == lista.tail)                  //procurando o proximo escolhido
-                        aux = lista.head->next;
+                    aux1 = aux1->next;
+                    if (aux1 == lista.tail)                  //procurando o proximo escolhido
+                        aux1 = lista.head->next;
                 }
                 
-                esc = aux->value;
+                esc = aux1->value;
                 
                 mostrar(lista, esc);
             }
         }
         else
-            aux = aux->next;
+            aux1 = aux1->next;
     }
 
 }
