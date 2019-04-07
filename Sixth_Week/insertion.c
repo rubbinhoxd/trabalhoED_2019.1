@@ -17,7 +17,7 @@ void show(int vet[], int size){
 
 void insertion_sort(int vet[], int size) {
 
-	int aux = 0;
+    int aux = 0;
 
     for (int i = 1; i < size; i++) {
         
