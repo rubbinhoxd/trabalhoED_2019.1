@@ -71,4 +71,15 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Levei cerca de 2 dias pra fazer. Comecei no Domingo, e vim terminar quase agora, no final da segunda-feira, com ajuda.
 
+# 06 - Algoritmos de Ordenação: Bubble, Insertion e Selection Sort
+
+-----> Eu fiz sozinho os 3 algoritmos de ordenação, o bubble, o insertion e o Selection sort.
+
+-----> Estudei os algoritmos Insertion e o Selection, e implementei para ordenar os vetores. O bubble eu já sabia como que funcionava, e foi o primeiro que fiz.
+
+-----> Eu aprendi a implementar 3 algoritmos de Ordenação
+
+-----> Eu tive um pouco de dúvida na hora de implementar o Insertion, mas no final, deu certo.
+
+-----> Levei cerca de 2 horas para implementar os 3.
 
