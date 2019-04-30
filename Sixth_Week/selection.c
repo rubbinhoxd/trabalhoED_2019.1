@@ -4,12 +4,12 @@ int show(int vet[], int size){
 
 	printf("[ ");
 
-	for(int i = 0; i < size; i++){
-		printf("%d", vet[i]);
+for(int i = 0; i < size; i++){
+	printf("%d", vet[i]);
 		if(i < size - 1){
 			printf(" ");
-		}
 	}
+}
 
 	printf("] ");
 
@@ -17,12 +17,10 @@ int show(int vet[], int size){
 
 void selection_sort(int vet[], int size) { 
   
-	int aux = 0;
+int aux = 0;
 
-  	for (int i = 0; i < (size-1); i++){ 
-  
-     	int min = i;
-
+  for (int i = 0; i < (size-1); i++){ 
+  	int min = i;
     	for (int j = (i+1); j < size; j++) {
        		if(vet[j] < vet[min]) 
          		min = j;
