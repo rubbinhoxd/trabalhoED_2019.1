@@ -20,22 +20,21 @@ void trigo(int x, int y, float ang, int size){
 
     for(int i = 0; i < 4; i++){
    
-
-            int yfinal = y1 - size * xm_sin(ang);
+        int yfinal = y1 - size * xm_sin(ang);
 	    
-	    int xfinal = x1 + size * xm_cos(ang);
+	int xfinal = x1 + size * xm_cos(ang);
         
-            xd_thick_line(x, y, xfinal, yfinal, 5);
+        xd_thick_line(x, y, xfinal, yfinal, 5);
         
-            trigo(xfinal, yfinal, ang - 45, size/3); //galhos da esquerda
+        trigo(xfinal, yfinal, ang - 45, size/3); //galhos da esquerda
         
-            trigo(xfinal, yfinal, ang + 45, size/3); //galhos da direita
+        trigo(xfinal, yfinal, ang + 45, size/3); //galhos da direita
         
-            x1 = xfinal;
+        x1 = xfinal;
         
-            y1 = yfinal;
+        y1 = yfinal;
             //trigo(xf, yf, ang, size - xm_rand(5 , 15));
-            x_step("trigo");
+        x_step("trigo");
     }
 
 }
