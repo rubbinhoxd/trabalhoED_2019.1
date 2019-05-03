@@ -2,15 +2,15 @@
 
 void show(int vet[], int size){
 
-	printf("[ ");
+  printf("[ ");
 
-	for(int i = 0; i < size; i++){
-		printf("%d", vet[i]);
-		if(i < size - 1){
-			printf(" ");
-		}
-	}
-	printf("] ");
+  for(int i = 0; i < size; i++){
+      printf("%d", vet[i]);  
+      if(i < size - 1){
+	 printf(" ");
+      }
+  }
+  printf("] ");
 
 }
 
@@ -19,12 +19,9 @@ void insertion_sort(int vet[], int size) {
 
     int aux = 0;
 
-    for (int i = 1; i < size; i++) {
-        
-        int j = i;
-        
+    for(int i = 1; i < size; i++) {
+       	 int j = i;
         while ( j > 0 && vet[j - 1] > vet[j]) {
-            
             aux = vet[j];
 
             vet[j] = vet[j - 1];
@@ -33,7 +30,8 @@ void insertion_sort(int vet[], int size) {
 
             j--;
         }
-      }
+    }
+
 }
 
 
@@ -43,24 +41,24 @@ void insertion_sort(int vet[], int size) {
 
 int main(){
 
-	int size = 0;
+  int size = 0;
 
-	printf("Digite o tamanho do seu vetor:\n");
+  printf("Digite o tamanho do seu vetor:\n");
 
-	scanf("%d", &size);
+  scanf("%d", &size);
 
-	int vet[size];
+  int vet[size];
 
-	printf("Agora, digite os valores do seu vetor: \n");
+  printf("Agora, digite os valores do seu vetor: \n");
 
-	for(int i = 0; i< size; i++){
-		scanf("%d", &vet[i]);
-	}
+  for(int i = 0; i< size; i++){
+	scanf("%d", &vet[i]);
+  }
 
 
-	insertion_sort(vet, size);
+  insertion_sort(vet, size);
 
-	show(vet, size);
+  show(vet, size);
 
-	return 0;
+  return 0;
 }
