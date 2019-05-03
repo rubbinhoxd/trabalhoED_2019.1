@@ -10,8 +10,8 @@
 
 typedef struct{
 
-	int l;
-	int c;
+  int l;
+  int c;
 
 } Pos;
 
@@ -26,41 +26,37 @@ typedef struct{
 
 void embaralha(Pos vet[], int size){
 	
-	for(int i = 0; i < size; i++){
-		int pos = rand() % size;
-		Pos aux = vet[i];
-		vet[i] = vet[pos];
-		vet[pos] = aux;
-	}
+  for(int i = 0; i < size; i++){
+	int pos = rand() % size;
+	Pos aux = vet[i];
+	vet[i] = vet[pos];
+	vet[pos] = aux;
+  }
 }
 
 
 bool equals(int nl, int nc, char mat [nl][nc], int l, int c, char value){
-	if((l < 0) || (l >= nl) || (c <0) || (c >= nc)){
+   if((l < 0) || (l >= nl) || (c <0) || (c >= nc)){
 		return false;
 	}
-	
-	return mat[l][c] == value;
+   return mat[l][c] == value;
 }
-
-
-
 
 bool eh_furavel(int nl, int nc, char mat [nl][nc], int l, int c){
 
-	if(!equals(nl, nc, mat, l, c, '#')){
+   if(!equals(nl, nc, mat, l, c, '#')){
 		return false;
-	}
+   }
 
-	int cont = 0;
+   int cont = 0;
 
-	Pos neibs[] = pega_vizinhos(l, c);
+   Pos neibs[] = pega_vizinhos(l, c);
 
-	for(int i = 0; i < 4; i++){
-		if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, '#')){
+   for(int i = 0; i < 4; i++){
+	if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, '#')){
 			cont++;
-		}
 	}
+   }
 
 	if(cont < 3 ){
 		return false;
@@ -68,40 +64,34 @@ bool eh_furavel(int nl, int nc, char mat [nl][nc], int l, int c){
 
 
 	return true;
-
-
 }
 			
 
-
-
-	
-
 void furar(int nl, int nc, char mat [nl][nc], int l, int c){
 
-	if(!eh_furavel(nl, nc, mat, l, c)){
-		return;
-	}	
-	mat[l][c] = ' ';
+  if(!eh_furavel(nl, nc, mat, l, c)){
+	return;
+  }	
+  mat[l][c] = ' ';
 
-	Pos neibs[] = pega_vizinhos(l, c);
+  Pos neibs[] = pega_vizinhos(l, c);
 	
-	embaralha(neibs, 4);
+  embaralha(neibs, 4);
 
-	for(int i = 0; i < 4 ; i++){
-		furar(nl, nc, mat, neibs[i].l, neibs[i].c);
-	}
+   for(int i = 0; i < 4 ; i++){
+	furar(nl, nc, mat, neibs[i].l, neibs[i].c);
+   }
 }
 
 void mostrar(int nl, int nc, char mat[nl][nc]){
 
-	for(int l = 0; l < nl; l++){
-		for(int c = 0; c < nc; c++){
-			if(mat[l][c] == '#'){
-				printf("█");
-			}
+  for(int l = 0; l < nl; l++){
+	for(int c = 0; c < nc; c++){
+		if(mat[l][c] == '#'){
+			printf("█");
+		}
 			else{
-				printf("%c", mat[l][c]);
+			printf("%c", mat[l][c]);
 			}
 		}	
 		printf("\n");
@@ -111,7 +101,7 @@ void mostrar(int nl, int nc, char mat[nl][nc]){
 	//printf(" ");
 
 bool procurar_saida(int nl, int nc, char mat[nl][nc], bool mat2[nl][nc], int l, int c, int lsaida, int csaida){
-	if(!equals(nl, nc, mat, l, c, ' '))
+    if(!equals(nl, nc, mat, l, c, ' '))
         return false;
     if(mat[l][c] != ' ')
         return false;
@@ -135,48 +125,45 @@ bool procurar_saida(int nl, int nc, char mat[nl][nc], bool mat2[nl][nc], int l, 
 
 int main(int argc, char * argv[]){
 	
-	srand(time(NULL));
+  srand(time(NULL));
 
-	int nl = 0;
+  int nl = 0;
 	
-	int nc = 0;
+  int nc = 0;
 
-	scanf("%d %d", &nl, &nc);
+  scanf("%d %d", &nl, &nc);
 
-	if(argc > 2){
-		nl = atoi(argv[1]);
-		nc = atoi(argv[2]);
-	}
+  if(argc > 2){
+	nl = atoi(argv[1]);
+	nc = atoi(argv[2]);
+  }
 	
-	char mat[nl][nc];
-	bool mat2[nl][nc];
+  char mat[nl][nc];
+  bool mat2[nl][nc];
 
 	//char *p = &mat[nl][nc];
 
-	for(int i = 0; i< nl; i++){
-		for(int j = 0; j < nc; j++){
-			mat[i][j] = '#';
-		}
-	} 
+  for(int i = 0; i< nl; i++){
+	for(int j = 0; j < nc; j++){
+		mat[i][j] = '#';
+	}
+  } 
 
-	furar(nl, nc, mat, 1, 1);
+  furar(nl, nc, mat, 1, 1);
 
-	mostrar(nl, nc, mat);
+  mostrar(nl, nc, mat);
 
-	printf("Digite uma linha e uma coluna para a saida\n");
+  printf("Digite uma linha e uma coluna para a saida\n");
 
-	int ls, cs;
+  int ls, cs;
 
 
-	scanf("%d %d", &ls, &cs);
+  scanf("%d %d", &ls, &cs);
 
-	bool achou = procurar_saida(nl, nc, mat, mat2, 1, 1, ls, cs);
+  bool achou = procurar_saida(nl, nc, mat, mat2, 1, 1, ls, cs);
 
 	
-	mostrar(nl, nc, mat);
+  mostrar(nl, nc, mat);
 	
-
-
-
-	return 0;
+  return 0;
 }
