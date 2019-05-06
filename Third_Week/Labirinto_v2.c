@@ -37,7 +37,7 @@ for(int i = 0; i < size; i++){
 
 bool equals(int nl, int nc, char mat [nl][nc], int l, int c, char value){
    if((l < 0) || (l >= nl) || (c <0) || (c >= nc)){
-		return false;
+       return false;
 	}
    return mat[l][c] == value;
 }
