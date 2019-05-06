@@ -2,16 +2,16 @@
 
 int show(int vet[], int size){
 
-	printf("[ ");
+printf("[ ");
 
 for(int i = 0; i < size; i++){
-	printf("%d", vet[i]);
-		if(i < size - 1){
-			printf(" ");
-	}
+     printf("%d", vet[i]);
+     if(i < size - 1){
+	printf(" ");
+     }
 }
 
-	printf("] ");
+printf("] ");
 
 }
 
@@ -58,7 +58,7 @@ int main(){
 
 	show(vet, size);
 
-
+	printf("/n");	
 
 	return 0;
 }
