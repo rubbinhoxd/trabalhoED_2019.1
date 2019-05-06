@@ -45,15 +45,15 @@ bool equals(int nl, int nc, char mat [nl][nc], int l, int c, char value){
 bool eh_furavel(int nl, int nc, char mat [nl][nc], int l, int c){
 
 if(!equals(nl, nc, mat, l, c, '#')){
-	return false;
+   return false;
 }
 int cont = 0;
 
 Pos neibs[] = pega_vizinhos(l, c);
 
 for(int i = 0; i < 4; i++){
-	if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, '#')){
-		cont++;
+    if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, '#')){
+       cont++;
 	}
 }
 
@@ -85,16 +85,16 @@ void furar(int nl, int nc, char mat [nl][nc], int l, int c){
 void mostrar(int nl, int nc, char mat[nl][nc]){
 
 for(int l = 0; l < nl; l++){
-	for(int c = 0; c < nc; c++){
-		if(mat[l][c] == '#'){
-			printf("█");
-		}
-			else{
-			printf("%c", mat[l][c]);
-			}
-		}	
-		printf("\n");
+    for(int c = 0; c < nc; c++){
+	if(mat[l][c] == '#'){
+	   printf("█");
 	}
+	   else{
+		printf("%c", mat[l][c]);
+	   }
+     }	
+		printf("\n");
+ }
 		
 }
 	//printf(" ");
