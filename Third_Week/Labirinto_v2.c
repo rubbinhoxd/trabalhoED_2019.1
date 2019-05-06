@@ -26,7 +26,7 @@ typedef struct{
 
 void embaralha(Pos vet[], int size){
 	
-  for(int i = 0; i < size; i++){
+for(int i = 0; i < size; i++){
 	int pos = rand() % size;
 	Pos aux = vet[i];
 	vet[i] = vet[pos];
@@ -44,26 +44,25 @@ bool equals(int nl, int nc, char mat [nl][nc], int l, int c, char value){
 
 bool eh_furavel(int nl, int nc, char mat [nl][nc], int l, int c){
 
-   if(!equals(nl, nc, mat, l, c, '#')){
-		return false;
-   }
+if(!equals(nl, nc, mat, l, c, '#')){
+	return false;
+}
+int cont = 0;
 
-   int cont = 0;
+Pos neibs[] = pega_vizinhos(l, c);
 
-   Pos neibs[] = pega_vizinhos(l, c);
-
-   for(int i = 0; i < 4; i++){
+for(int i = 0; i < 4; i++){
 	if(equals(nl, nc, mat, neibs[i].l, neibs[i].c, '#')){
-			cont++;
+		cont++;
 	}
-   }
+}
 
-	if(cont < 3 ){
-		return false;
-	}
+if(cont < 3 ){
+	return false;
+}
 
 
-	return true;
+return true;
 }
 			
 
@@ -85,7 +84,7 @@ void furar(int nl, int nc, char mat [nl][nc], int l, int c){
 
 void mostrar(int nl, int nc, char mat[nl][nc]){
 
-  for(int l = 0; l < nl; l++){
+for(int l = 0; l < nl; l++){
 	for(int c = 0; c < nc; c++){
 		if(mat[l][c] == '#'){
 			printf("█");
