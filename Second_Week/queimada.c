@@ -9,8 +9,8 @@ const char EMPTY = '.';
 const char BURNED = 'x';
 
 //Deslocamentos possiveis
-int moveL[] = {0, -1, 0, 1};
-int moveC[] = {-1, 0, 1, 0};
+int moveL[] = {0, -1, 0, 1};//Baixo e Cima
+int moveC[] = {-1, 0, 1, 0};//Esquerda e Direita
 int sides = sizeof(moveL)/sizeof(int);
 
 //Embaralha o vetor
@@ -33,39 +33,39 @@ void show(int linha, int coluna, char mat[linha][coluna]){
     getchar();
 }
 
-int queima(int nl, int nc,char mat[nl][nc + 2], int l, int c){
+int pay_fire(int nl, int nc,char mat[nl][nc], int l, int c){
     if((l < 0) ||(l >= nl) ||(c <  0) ||(c >= nc)){
         return 0;
     }
     if(mat[l][c] != TREE){
         return 0;
     }
-    mat[l][c] = FIRE;
+    mat[l][c] = FIRE;//taca fogo
     show(nl, nc, mat);
     int cont = 1;
     int viz[] = {0, 1, 2, 3};
     shuffle(viz, sides);
     for(int v = 0; v < sides; v++){
         int i = viz[v];
-        cont += queima(nl, nc, mat, l + moveL[i], c + moveC[i]);
+        cont += pay_fire(nl, nc, mat, l + moveL[i], c + moveC[i]);//recursiva
     }
-    mat[l][c] = BURNED;
+    mat[l][c] = BURNED;//marca o x
     show(nl, nc, mat);
     return cont;
 }
 
 int main(){
     srand(time(NULL));//Gera uma nova seed de aleatoriedade
-    int linha = 0;
-    int coluna = 0;
+    int nl = 0;
+    int nc = 0;
     printf("Digite o tamanho da floresta:\n");
-    scanf("%d%d", &linha, &coluna);
+    scanf("%d%d", &nl, &nc);
     printf("Digite a porcentagem de arvores 0-100:\n");
     int taxa = 0;
     scanf("%d", &taxa);
-    char mat[linha][coluna];
-    for(int l = 0; l < linha; l++){
-        for(int c = 0; c < coluna; c++){
+    char mat[nl][nc];
+    for(int l = 0; l < nl; l++){
+        for(int c = 0; c < nc; c++){
             //Gera arvores aleatoriamente
             if(rand() % 101 <= taxa){
                 mat[l][c] = TREE;
@@ -74,12 +74,12 @@ int main(){
             }
         }
     }
-    show(linha, coluna, mat);
+    show(nl, nc, mat);
     printf("Onde iniciar o incendio?\n");
     int i = 0;//linha escolhida para queimar
     int j = 0;//coluna escolhida para queimar
     scanf("%d%d", &i, &j);
-    int total = queima(linha, coluna, mat, i, j);
-    show(linha, coluna, mat);
+    int total = pay_fire(nl, nc, mat, i, j);
+    show(nl, nc, mat);
     printf("total do estrago: %d\n", total);
 }
