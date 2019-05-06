@@ -52,5 +52,7 @@ int main(){
 
   show(vet, size);
 
+  printf("\n");
+
   return 0;
 }
