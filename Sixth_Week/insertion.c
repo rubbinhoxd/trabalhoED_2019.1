@@ -59,6 +59,8 @@ int main(){
   insertion_sort(vet, size);
 
   show(vet, size);
-
+	
+  printf("/n");	
+  
   return 0;
 }
