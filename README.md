@@ -83,3 +83,15 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Levei cerca de 2 horas para implementar os 3.
 
+# 07 - Simulação Bancária
+
+-----> Eu fiz a simulação bancária a qual eu fui submetido a fazer.
+
+-----> Estudei as estruturas que eu necessitava para fazer o projeto, revi alguns vídeos no youtube, e consegui fazer.
+
+-----> Aprendi a mexer com algumas estruturas em C++ (List and Vector)
+
+-----> A mexer nas determinadas estruturas, a mexer no it, etc. Foram erros básicos, mas que culminaram para que o trabalho ficasse mais difícil para mim, porém indo nas monitorias do Almoço com Código, eu consegui fazer o trabalho.
+
+-----> Cerca de 1 semana, com ajuda dos monitores.
+
