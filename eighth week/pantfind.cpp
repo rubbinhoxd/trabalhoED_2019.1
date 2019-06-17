@@ -116,7 +116,7 @@ void floodfill(vector<vector<int>>& mat_int, vector<string>& mat, int l, int c, 
 int main(){
     int nl = 20, nc = 20;
     xmat_init(nl, nc);
-    vector<string> mat(nl, string(nc, 'w'));
+    vector<string> mat(nl, string(nc, 'g'));
     vector<vector<int>> mat_int(nl, vector<int>(nc, 0));
     for(int l = 0; l < (int) mat.size(); l++){
         for(int c = 0; c < (int) mat[0].size(); c++){
