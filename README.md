@@ -85,7 +85,7 @@ para relembrar umas coisas. Mas no final deu certo.
 
 # 07 - Simulação Bancária
 
------> Eu fiz a simulação bancária a qual eu fui submetido a fazer.
+-----> Eu fiz a simulação bancária a qual eu fui submetido a fazer, com ajuda.
 
 -----> Estudei as estruturas que eu necessitava para fazer o projeto, revi alguns vídeos no youtube, e consegui fazer.
 
@@ -95,3 +95,15 @@ para relembrar umas coisas. Mas no final deu certo.
 
 -----> Cerca de 1 semana, com ajuda dos monitores.
 
+
+# 08 - PantFind
+
+-----> Eu fiz o pantfind aproveitando as funções que o senhor usou em sala, com ajuda.
+
+-----> Estudei o código do floodfill, e a partir dele, fiz o pantfind. E estudei um pouco fila também.
+
+-----> Aprendi a mexer com filas, não tão bem, mas aprendi.
+
+-----> A mexer com os comandos do xpaint, e em determinados momentos, a mexer com a própria estrutura de list.
+
+-----> Cerca de 4 dias, com a ajuda dos monitores no almoço com Código
