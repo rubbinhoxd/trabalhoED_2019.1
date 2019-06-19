@@ -107,3 +107,16 @@ para relembrar umas coisas. Mas no final deu certo.
 -----> A mexer com os comandos do xpaint, e em determinados momentos, a mexer com a própria estrutura de list.
 
 -----> Cerca de 4 dias, com a ajuda dos monitores no almoço com Código
+
+
+# 09 - Questões HackerRank
+
+-----> Eu fiz todas as questões do nível easy do HackerRank, conforme o senhor pediu.
+
+-----> Basicamente, estudei a estrutura tree e vi as videoaulas, as quais me auxiliaram a fazer as funções.
+
+-----> Aprendi a fazer funções presentes na estrutura tree.
+
+-----> No topview, pois exigiu mais tempo. Sendo mais difícil de fazer.
+
+-----> Cerca de 1 dia.
